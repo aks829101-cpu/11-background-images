@@ -1,0 +1,172 @@
+/* ---------- Colors (change them here and they change everywhere) ---------- */
+:root {
+  --orange: #F5934A;
+  --blue: #1D93BA;
+  --coral: #E8603C;
+  --cream: #FDF9EE;
+  --code-bg: #FFF1E4;
+  --code-border: #F7D9C0;
+  --line: #EBD9B8;
+  --teal-light: #BFE8E3;
+  --text: #2B2B2B;
+  --white: #FFFFFF;
+}
+
+/* ---------- Page background: tiled pattern that stays put on scroll ---------- */
+body {
+  margin: 0;
+  background-color: var(--teal-light);
+  background-image: url(images/pattern.webp);
+  background-repeat: repeat;
+  background-attachment: fixed;
+  font-family: "Fira Sans", sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+  color: var(--text);
+}
+
+/* ---------- Orange header bar ---------- */
+.site-header {
+  background-color: var(--orange);
+  border-bottom: 4px solid var(--blue);
+  padding: 20px 0;
+}
+
+.site-header-inner {
+  max-width: 620px;
+  margin: 0 auto;
+}
+
+.site-title {
+  margin: 0 0 10px 0;
+  font-family: "Pacifico", cursive;
+  font-size: 48px;
+  line-height: 70px;
+  color: var(--white);
+}
+
+.nav-list {
+  display: flex;
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.nav-link {
+  display: block;
+  padding: 4px 16px;
+  border: 1px solid var(--white);
+  border-radius: 20px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--white);
+}
+
+/* ---------- Hero banner: photo as a background image ---------- */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 475px;
+  background-image: url(images/hero.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-bottom: 4px solid var(--blue);
+}
+
+.hero-title {
+  margin: 0;
+  font-family: "Raleway", sans-serif;
+  font-weight: 300;
+  font-size: 32px;
+  letter-spacing: 16px;
+  text-transform: uppercase;
+  color: var(--white);
+}
+
+/* ---------- Main content area ---------- */
+.page {
+  max-width: 660px;
+  margin: 0 auto;
+  padding: 40px 0 120px 0;
+}
+
+/* ---------- Cream card ---------- */
+.card {
+  padding: 40px;
+  background-color: var(--cream);
+}
+
+.card-title {
+  margin: 0;
+  font-family: "Pacifico", cursive;
+  font-weight: 400;
+  font-size: 38px;
+  line-height: 50px;
+  color: var(--blue);
+}
+
+.card-subtitle {
+  margin: 0 0 20px 0;
+  padding-bottom: 15px;
+  border-bottom: 1px solid var(--line);
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--coral);
+}
+
+.text {
+  margin: 0 0 20px 0;
+}
+
+.tag-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 0 0 20px 0;
+}
+
+.code {
+  padding: 2px 8px;
+  border: 1px solid var(--code-border);
+  border-radius: 3px;
+  background-color: var(--code-bg);
+  font-family: "Fira Mono", monospace;
+  font-size: 16px;
+  color: var(--coral);
+}
+
+.text-link {
+  color: var(--blue);
+  text-decoration: underline dotted;
+}
+
+/* ---------- Blue "That's a wrap!" box ---------- */
+.wrap-up {
+  margin-top: 30px;
+  padding: 40px;
+  border-left: 6px solid var(--orange);
+  background-color: var(--blue);
+  color: var(--white);
+}
+
+.wrap-up-title {
+  margin: 0 0 10px 0;
+  font-family: "Pacifico", cursive;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 40px;
+}
+
+.wrap-up-text {
+  margin: 0;
+}
